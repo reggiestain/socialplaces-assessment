@@ -1,0 +1,7 @@
+contact_index:
+    path: /contact/index
+    controller: App\JoesBundle\Controller\ContactController::index
+    
+contact_create:
+    path: /contact/create
+    controller: App\JoesBundle\Controller\ContactController::create    

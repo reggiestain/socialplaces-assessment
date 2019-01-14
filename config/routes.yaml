@@ -1,0 +1,6 @@
+index:
+    path: /
+    controller: App\Controller\SecurityController::login
+app_file:
+    # loads routes from the given routing file stored in some bundle
+    resource: '@JoesBundle/Resources/config/routes.yaml'

@@ -1,0 +1,25 @@
+{% extends 'base.html.twig'%}
+
+{% block title %} welcome{% endblock %}
+
+{% block body %}
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="form_main">
+                    <h4 class="heading"><strong>Create </strong> Contact <span></span></h4>
+                    <div class="form">
+                            {{ form_start(contact_form,{'attr':{'id':'ContactFrm'} }) }}
+                            {{ form(contact_form) }}
+                            {# Add the reCAPTCHA div to show in form #}
+                            <div class="g-recaptcha" data-sitekey="6LePb4kUAAAAAE0k2F_TKgqM5Z4iyuk8hKWXSkJ4"></div><br>
+                            <div class="form-group">
+                            <button type="submit" class="btn btn-primary" form="ContactFrm">Save</button>
+                            </div>
+                            {{ form_end(contact_form) }}
+                    </div>
+                </div>
+            </div
+        </div>
+    </div>
+{% endblock %}
