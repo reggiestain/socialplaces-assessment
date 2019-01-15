@@ -71,3 +71,11 @@ Login as  ROLE_USER with the details below:
 
 Username: guest
 Password: guest
+
+##Create a new contact record with an API call
+
+``` bash
+
+http://127.0.0.1:8000/api/contact/create?firstname=James&surname=Bond&mobile=0781304587
+
+```
