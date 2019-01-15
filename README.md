@@ -1,6 +1,6 @@
 # PHP DEVELOPER PRACTICAL ASSESSMENT
 
-This application was developed with [laravel] 5.5*
+This application was developed with [symfony] 4.2*
 
 ## Installation
 
@@ -15,6 +15,19 @@ $ cd /path/to/apache/www/directory
 $ git clone https://github.com/reggiestain/hybrid-assessment.git
 
 ```
+
+## Install Composer
+
+Run composer command to installing dependencies
+
+``` bash
+
+$ cd /path/to/apache/www/directory
+
+$ composer install
+
+```
+
 ## Database Configuration
 
 Read and edit the .env file located in the project directory setup the 'Datasources' and any other configuration relevant for your application.
@@ -26,7 +39,7 @@ Read and edit the .env file located in the project directory setup the 'Datasour
 
 $ cd /path/to/project/directory
 
-$ php artisan migrate
+$ php bin/console doctrine:migrations:migrate
 
 ```
 
@@ -36,9 +49,7 @@ $ php artisan migrate
 
 $ cd /path/to/project/directory
 
-$ php artisan db:seed --class=UsersSeeder
-$ php artisan db:seed --class=ProductCategorySeeder
-$ php artisan db:seed --class=ProductsSeeder
+$ php bin/console doctrine:fixtures:load
 
 ```
 
@@ -48,15 +59,15 @@ $ php artisan db:seed --class=ProductsSeeder
 
 $ cd /path/to/project/directory
 
-$ php artisan serve
+$ php bin/console server:run
 
 ```
 
 You are now set to go.
 
-Run the application on your web server and register as a normal user to login with email and password
+Run the application on your web server and login with username and password
 
-Login as an administration with the details below:
+Login as  ROLE_USER with the details below:
 
-Email: reggiestain@gmail.com
-Password: adminadmin0123
+Username: guest
+Password: guest
