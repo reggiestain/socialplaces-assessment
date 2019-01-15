@@ -16,9 +16,9 @@ $ git clone https://github.com/reggiestain/hybrid-assessment.git
 
 ```
 
-## Install Composer
+Install Composer
 
-Run composer command to installing dependencies
+Run composer command to install dependencies
 
 ``` bash
 
