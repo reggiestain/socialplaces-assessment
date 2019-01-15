@@ -4,7 +4,7 @@ This application was developed with [symfony] 4.2*
 
 ## Installation
 
-#Install GIT 
+# Install GIT 
 
 Run the following GIT command to clone the project repository:
 
@@ -16,7 +16,7 @@ $ git clone https://github.com/reggiestain/hybrid-assessment.git
 
 ```
 
-#Install Composer
+# Install Composer
 
 Run composer command to install dependencies
 
@@ -72,7 +72,7 @@ Login as  ROLE_USER with the details below:
 Username: guest
 Password: guest
 
-##Create a new contact record with an API call
+## Create a new contact record with an API call
 
 ``` bash
 
