@@ -74,8 +74,6 @@ Password: guest
 
 ## Create a new contact record with an API call
 
-
-|     |     |
 | --- | --- |
 | Title    | Create new contact    |
 | URL   |  /api/contact/create   |
@@ -85,7 +83,4 @@ Password: guest
 |  Success Response   |  status: 201     |  
 |  Error Response   |  status: 201     | 
 
-``` bash
 
-
-```
