@@ -62,7 +62,7 @@ class ContactController extends AbstractController {
      * @param type $request
      * @return boolean
      */
-    function captchaverify($request) {
+    protected function captchaverify($request) {
         $recaptcha = new ReCaptcha('6LePb4kUAAAAAOMO6piY8FwzHo7eu6A5EVuGnbfY');
         $resp = $recaptcha->verify($request->request->get('g-recaptcha-response'), $request->getClientIp());
 
@@ -81,7 +81,7 @@ class ContactController extends AbstractController {
      * @param type $user
      * @param type $mailer
      */
-    function sendmail($user, $mailer, $msg) {
+    protected function sendmail($user, $mailer, $msg) {
 
         $message = (new \Swift_Message($msg))
             ->setFrom($user->getEmail())
