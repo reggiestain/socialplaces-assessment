@@ -81,15 +81,7 @@ Password: guest
 | URL   |  /api/contact/create   |
 | Method    |  POST   |
 | URL Params    | Required: firstname=[string]  surname=[string] mobile=[string] |
-| Data Params   | Example: 
-{
-  contact : {
-    firstname : [string],
-    surname : [string],
-    mobile : [alphanumeric]
-  }
-}
-    |
+| Data Params   | Example: {contact : {firstname : [string],surname : [string],mobile : [alphanumeric]}} |
 |  Success Response   |  status: 201     |  
 |  Error Response   |  status: 201     | 
 
