@@ -25,13 +25,11 @@ class ContactController extends AbstractController {
         $errors = $validator->validate($contact);
 
         if (count($errors) > 0) {
-
-            $em = $this->getDoctrine()->getManager();
-            $em->persist($contact);
-            $em->flush();
-
             return new JsonResponse(['status' => Response::HTTP_NOT_ACCEPTABLE]);
         }
+        $em = $this->getDoctrine()->getManager();
+        $em->persist($contact);
+        $em->flush();
         return new JsonResponse(['status' => Response::HTTP_CREATED]);
     }
 

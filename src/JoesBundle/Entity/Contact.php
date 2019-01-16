@@ -3,6 +3,7 @@
 namespace App\JoesBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
+use Symfony\Bridge\Doctrine\Validator\Constraints\UniqueEntity;
 use Symfony\Component\Validator\Constraints as Assert;
 
 /**
@@ -31,10 +32,10 @@ class Contact
     private $surname;
 
     /**
-     * @ORM\Column(type="string", length=10)
+     * @ORM\Column(name="mobile", type="string", length=10, unique=true)
      * @Assert\NotBlank
      * @Assert\Length(min = 10, max = 10, minMessage = "Please enter a valid mobile number", maxMessage = "Please enter a valid mobile number")
-     * @Assert\Regex(pattern="/^[0-9]*$/", message="Numbers only") 
+     * @Assert\Regex(pattern="/^([0-9]{1}[0-9]{9})$/", message="Invalid mobile number! mobile number format: eg 0755434434") 
      */
     private $mobile;
 
