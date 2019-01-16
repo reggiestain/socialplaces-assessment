@@ -74,11 +74,11 @@ Password: guest
 
 ## Create a new contact record with an API call
 
-|     |     |     |
-| --- | --- | --- |
-|     |     |     |
-|     |     |     |
-|     |     |     |
+
+
+|Title|     |
+|     |     |
+|     |     |     
 ``` bash
 Title 
 http://127.0.0.1:8000/api/contact/create?firstname=James&surname=Bond&mobile=0781304587
