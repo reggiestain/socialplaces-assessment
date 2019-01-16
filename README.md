@@ -74,6 +74,8 @@ Password: guest
 
 ## Create a new contact record with an API call
 
+|     |     |
+| --- | --- |
 | Title    | Create new contact    |
 | URL   |  /api/contact/create   |
 | Method    |  POST   |
