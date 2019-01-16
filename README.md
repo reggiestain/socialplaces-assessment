@@ -78,13 +78,22 @@ Password: guest
 |     |     |
 | --- | --- |
 | Title    | Create new contact    |
-|     |     |
-|     |     |
-|     |     |
-|     |     |
-|     |     |  
+| URL   |  /api/contact/create   |
+| Method    |  POST   |
+| URL Params    | Required: firstname=[string]  surname=[string] mobile=[string] |
+| Data Params   | Example: 
+{
+  contact : {
+    firstname : [string],
+    surname : [string],
+    mobile : [alphanumeric]
+  }
+}
+    |
+|  Success Response   |  status: 201     |  
+|  Error Response   |  status: 201     | 
+
 ``` bash
-Title 
-http://127.0.0.1:8000/api/contact/create?firstname=James&surname=Bond&mobile=0781304587
+
 
 ```
